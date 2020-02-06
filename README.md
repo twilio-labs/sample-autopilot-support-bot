@@ -1,3 +1,4 @@
+
 <a  href="https://www.twilio.com">
 <img  src="https://static0.twilio.com/marketing/bundles/marketing/img/logos/wordmark-red.svg"  alt="Twilio"  width="250"  />
 </a>
@@ -18,16 +19,7 @@ Implementations in other languages:
 
 ### How it works
 
-After the user sets and submits the configuration parameters on the `/config` page, it will automatically create an autopilot assistant with predefined tasks and actions using Twilio's REST api. Then, the user can send an SMS text to the configured Twilio number to start the conversation. The bot will ask the user for specific input to provide a proper response.
-
-<!--
-**TODO: UML Diagram**
-
-We can render UML diagrams using [Mermaid](https://mermaidjs.github.io/).
-
-
-**TODO: Describe how it works**
--->
+After the user sets and submits the configuration parameters on the `/config` page, the sample will automatically create an Autopilot assistant with predefined Tasks and actions using Twilio's REST API. Then, the user can send a text message to the configure phone number to start the conversation. The bot will ask the user for specific input to provide a proper response.
 
 ## Features
 
@@ -107,9 +99,9 @@ This will generate a url similar to: `https://cd2ef758.ngrok.io`
 
 6. Navigate to `/config` preceding with the ngrok url you got earlier to set the SMS params and create the autopilot assistant. **NOTE:** Always submit the configuration using the ngrok url, never with localhost. Otherwise the autopilot assistant won't be able to establish a call with the operator, if you choose that option.
 
-7. (Optional) After submitting the configuration you can go to your [Twilio's console](https://www.twilio.com/console/autopilot/list) and take a look at at the created autopilot for more details.
+7. (Optional) After submitting the configuration you can go to your [Twilio's Console](https://www.twilio.com/console/autopilot/list) and take a look at at the created autopilot for more details.
 
-8. Send an sms message to your Twilio's phone number to start the the chat.
+8. Send a text message to the phone number provisioned on Twilio to start the conversation!
 
 That's it!
 
