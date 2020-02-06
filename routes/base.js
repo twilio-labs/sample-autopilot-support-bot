@@ -5,13 +5,14 @@ const Database = require('../src/util/db-config');
 const updateAssistant = require('../src/services/autopilot');
 const assistantService = require('../src/services/assistant');
 const Tasks = require('../src/services/tasks');
+const cfg = require('../src/config');
 
 /* eslint-disable new-cap */
 const router = express.Router();
 
 // GET: /
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'SMS Support Chatbot' });
+  res.render('index', { title: 'SMS Support Chatbot', number: cfg.twilioPhoneNumber });
 });
 
 // GET: /config
