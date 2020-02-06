@@ -12,7 +12,10 @@ const router = express.Router();
 
 // GET: /
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'SMS Support Chatbot', number: cfg.twilioPhoneNumber });
+  res.render('index', {
+    title: 'SMS Support Chatbot',
+    number: cfg.twilioPhoneNumber,
+  });
 });
 
 // GET: /config
