@@ -2,8 +2,12 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
-  p Head over to 
-    a(href="/example")
-      code /example
-    | for some JSON example output 
+  p Welcome to #{title}!
+  p Here's how you use the sample:
+
+  ol
+    li Click the 
+      code Configuration
+      | button to set up the application
+    li Send a text message to 
+      code #{number}

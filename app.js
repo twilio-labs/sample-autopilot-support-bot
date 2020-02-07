@@ -3,6 +3,6 @@ const server = require('./server');
 
 server.listen(cfg.port, function() {
   console.log(
-    `Starting sample-appointment-reminders at http://localhost:${cfg.port}`
+    `Starting sample-autopilot-support-bot at http://localhost:${cfg.port}`
   );
 });

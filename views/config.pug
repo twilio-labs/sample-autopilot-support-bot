@@ -1,0 +1,46 @@
+extends layout
+
+block content
+  if message === 'success'
+    .alert(class= 'alert-success alert-dismissible', role='alert')
+      button.close(type='button' data-dismiss='alert' aria-label='Close')
+        span(aria-hidden='true') &times;
+      <strong>Success!</strong> Data saved successfully.
+  h1= 'SMS configuration'
+  p Here you can configure the test parameters for the application:
+  ul
+    li You can fill the fields or leave them blank.
+    li All blank fields will be replaced with default data.
+    li Clicking the "Submit" button will also trigger the autopilot process, so please wait a few moments.
+  form(action='/config', method='POST')
+    .form-group
+      label
+      | Company name
+      input.form-control(type='text', name='company', value=config.name)
+    .form-group
+      label
+      | Operator Phone number
+      input.form-control(type='text', name='operatorPhone', value=config.operatorPhoneNumber)
+    .form-group
+      label
+      | Weekday hours
+      .row
+        .col-md-2
+          | Start:
+          input.form-control(type='time', name='weekdayStartTime', value=config.weekdayHours.start)
+        .col-md-2
+          | End:
+          input.form-control(type='time', name='weekdayEndTime', value=config.weekdayHours.end)
+
+    .form-group
+      label
+      | Weekend hours
+      .row
+        .col-md-2
+          | Start:
+          input.form-control(type='time', name='weekendStartTime', value=config.weekendHours.start)
+        .col-md-2
+          | End:
+          input.form-control(type='time', name='weekendEndTime', value=config.weekendHours.end)
+
+    button(type="submit" class="btn btn-primary") Submit
