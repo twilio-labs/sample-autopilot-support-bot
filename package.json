@@ -39,17 +39,17 @@
     "morgan": "^1.9.1",
     "pug": "^2.0.4",
     "serve-favicon": "^2.5.0",
-    "twilio": "^3.39.2"
+    "twilio": "^4.0.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
     "cross-env": "^6.0.3",
-    "eslint": "^6.8.0",
+    "eslint": "^7.0.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-prettier": "^3.1.2",
     "mocha": "^7.0.0",
-    "nodemon": "^2.0.2",
+    "nodemon": "^2.0.17",
     "prettier": "^1.19.1",
     "sinon": "^8.1.1",
     "sinon-chai": "^3.4.0",
